@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,800|Roboto:400,400i,700,700i&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Roboto', sans-serif; */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #95e1d3;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 22px;
+    color: #333333;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    color: #333333;
+}
+
+h4:after {
+    content: "";
+    width: 60px;
+    display: block;
+    height: 3px;
+    background-color: #f38181;
+    margin: 30px auto;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+h6 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+    color: #333333;
+    margin: 0px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.bg-blue {
+    background-color: #95e1d3;
+}
+
+.bg-mountains {
+    background-image: url('../img/mountain-background.png');
+    background-position: center;
+    background-size: cover;
+    background-color: #F7F7F7;
+}
+
+.section-logo {
+    width: 100px;
+    filter:grayscale(100%);
+}
+
+
+/* INTRO START */
+
+.intro {
+    background-image: url('../img/city.jpg');
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 0px !important;
+    line-height: 0;
+}
+
+.custom-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 54px;
+    text-transform: uppercase;
+    padding: 0px;
+    transition: all 0.3s;
+}
+
+.bg-menu {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.navbar {
+    padding-top: 25px;
+    padding-bottom: 25px
+}
+
+.menu-container {
+    padding-left:100px;
+    padding-right:100px;
+    transition: all 0.6s;
+}
+
+.custom-link:after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    margin-top: 12px;
+    background-color: transparent;
+    transition: all 0.7s;
+}
+
+.custom-link:hover {
+    color: #fce38a !important;
+}
+
+.custom-link:hover:after {
+    background-color: #fce38a !important;
+}
+
+.intro-title-section {
+    min-height: 100vh;
+}
+
+.intro-title-section h2 {
+    font-size: 48px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.intro-title-section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 86px;
+    text-transform: uppercase;
+    line-height: 90px;
+    margin-top: 20px;
+}
+
+.intro-title-section h1:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 40px auto !important;
+}
+
+.intro-section-button {
+    border-width: 2px ;
+    border-radius: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    transition: all 0.3s;
+}
+
+.intro-section-button:hover {
+    color: #333333;
+}
+
+.slaider .slaid-control {
+    margin: 0px 14px;
+    text-transform: uppercase;
+    border-top: 2px solid rgba(200,200,200,0.4);
+}
+
+.slaider .active {
+    border-top: 2px solid #FFF;
+    color: #FFF !important;
+}
+
+.slaid-control > p {
+    margin: 15px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px !important;
+    line-height: 10px;
+    color: #e6e6e6;
+}
+
+.slaid-control span {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-right: 9px !important;
+}
+
+.slaider .active p {
+    border-color: #FFF;
+    color: #FFF;
+}
+
+.slaider .active p span {
+    color: #FFF;
+}
+
+.slaider .active:before {
+    content: "";
+    display: block;
+    position: relative;
+    top:-2px;
+    width: 70px;
+    height: 2px;
+    background-color: #f38181;
+}
+
+/* INTRO END */
+
+
+/* IMAGE HOVER SECTIONS START */
+.image-main-container {
+    cursor: pointer;
+}
+
+.image-main-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 0px;
+    letter-spacing: 1px;
+}
+
+.image-main-container .img-container {
+    top: 0px;
+    left: 0px;
+    transition: all 0.1s;
+}
+
+.image-main-container .hover-effect {
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    background-image: linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8));
+    transition: all 0.3s;
+}
+
+.image-main-container:hover .hover-effect {
+    opacity: 1;
+}
+
+.image-main-container:hover .img-container {
+    top:-10px;
+    left:-10px;
+}
+
+.image-main-container .hover-effect i {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* IMAGE HOVER SECTIONS ENDS */
+
+/* STATISTIC SECTION START */
+
+.statistics .stats {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.statistics .stats:first-of-type {
+    border-left: none;
+}
+
+.statistics .stats h2 {
+    font-size: 56px;
+}
+
+/* STATISTIC SECTION END */
+
+/* SKILLSET SECTION START */
+
+.skill-sets .descriptions {
+    padding: 40px;
+    padding-right: 20px;
+}
+
+.first-skill-row {
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.first-skill-row .descriptions {
+    padding-top: 20px;
+}
+
+.skill-sets .descriptions i {
+    font-size: 35px;
+    color: #95e1d3;
+}
+
+.skill-sets .description h5 {
+    color: #333333;
+    font-weight: 800;
+}
+
+/* SKILLSET SECTION START */
+
+/* DEVICE SECTION START */
+
+.services-section {
+    margin-bottom: 100px;
+}
+
+.services-section .device-images .mobile {
+    right: -100px;
+    z-index: 2;
+    bottom: -100px;
+}
+
+/* DEVICE SECTION ENDS */
+
+/* COLLAPSE SECTION START */
+
+.collapse-section .card {
+    border: 1px solid rgba(0,0,0,.125) !important;
+    border-radius: 5px !important;
+}
+
+.card-header-section > i {
+    min-width: 40px;
+    font-size: 25px;
+    margin-left: 5px;
+    color: #95e1d3;
+}
+
+.collapse-section h2 {
+    color: #333333;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+.collapse-section i.card-header-icon {
+    color: #999999;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.collapse-section .card i.collapsed {
+    transform: rotate(0deg);
+}
+
+.collapse-section .card i:not(.collapsed) {
+    transform: rotate(180deg);    
+}
+
+.collapse-section .card-body {
+    max-height: 180px;
+    overflow-y: scroll;
+    padding: 5px !important;
+}
+
+.collapse-section .card-body p {
+    margin-right: 15px;
+    line-height: 25px;
+    font-style: italic;
+}
+
+.collapse-section .card-body-container {
+    padding: 10px 15px  !important;
+}
+
+/* COLLAPSE SECTION END */
+
+/* CAROUSEL SECTION START */
+
+.carousel-icon {
+    border: 2px solid #95e1d3;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.carousel-icon i {
+    color: #95e1d3;
+    font-size: 60px;
+}
+
+.carousel-content p {
+    font-style: italic;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.carousel-content h6:before {
+    position: relative;
+    display: block;
+    content: "";
+    background-color: #f38181;
+    width: 50px;
+    height: 3px;
+    float: left;
+    align-self: center;
+    top: 9px;
+    margin-right: 10px;
+}
+
+/* CAROUSEL SECTION END */
+
+/* IMAGE SECTION WITH ICONS START */
+
+.img-gallery h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #333333;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.img-gallery h5 {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    color: #999999;
+}
+
+.img-gallery .hover-icons i {
+    font-size: 25px;
+    padding: 15px;
+    background-color: #fce38a;
+    color: #f38181;
+    margin-right: 1px;
+    transition: all 0.3s;
+}
+
+.img-gallery .hover-icons i:last-of-type {
+    margin-right: 0px;
+}
+
+.img-gallery .hover-icons i:hover {
+    background-color: #f38181;
+    color: #FFF;
+}
+
+/* IMAGE SECTION WITH ICONS ENDS */
+
+/* IMAGE GALLERY STARTS */
+
+.extra-small {
+    font-size: 10px !important;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 100 !important;
+    font-style: italic;
+}
+
+/* IMAGE GALLERY ENDS */
+
+/* CAROUSEL SECTION STARTS */
+
+.rounded-circle {
+    width: 150px;
+    height: 150px;
+}
+
+/* CAROUSEL SECTION ENDS */
+
+/* USER SECTION STARTS */
+
+.user-description h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.user-description h4 {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 100;
+    font-size: 14px;
+    color: #999999;
+    font-style: italic !important;
+}
+
+.user-description h4:after {
+    width: 40px;
+    margin: 15px 0px;
+}
+
+.user-description p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.rounded-circle-small {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+/* USER SECTION ENDS */
+
+/* POST SECTION STARTS */
+
+.post h5 {
+    font-weight: 800;
+}
+
+.post p {
+ font-size: 12px;
+ line-height: 20px;
+}
+
+.post .date {
+    width: 60px;
+    max-width: auto;
+    background-color: #95e1d3;
+    bottom: 10px;
+    left: -15px;
+}
+
+.post .date h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.post .date p {
+    font-size: 12px;
+    line-height: 15px;
+    font-style: italic;
+    margin: 0px;
+}
+
+.post-icons {
+    border-top: 1px solid #e6e6e6;
+}
+
+.post-icons i {
+    color: #95e1d3;
+    font-size: 20px;
+}
+
+.post-icons p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* POST SECTION  */
+
+
+/* MAP SECTION START */
+
+.bg-mountain-small {
+    background-image: url('../img/mountain-background.png');
+    background-position: center;
+    background-size: cover;
+    background-color: #F7F7F7;
+}
+
+.bg-mountain-small i {
+    color: #f38181;
+    font-size: 30px;
+}
+
+.bg-mountain-small h4 {
+    color: #f38181;
+}
+
+.bg-mountain-small h4:after {
+    margin-bottom: 0px;
+}
+
+/* MAP SECTION ENDS */
+
+/* FOOTER SECTION STARTS */
+
+.footer-section .social-section h2 {
+    color: #c4c4c4;
+    font-size: 35px;
+}
+
+.footer-section .social-section p {
+    color: #c4c4c4;
+    line-height: 20px;
+}
+
+.footer-section .social-section .followers b {
+    font-size: 18px;
+}
+
+.footer-section .social-section .followers {
+    color: #333333;
+    font-size: 14px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.footer-section .social-section .social-buttons span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #acacac;
+    line-height: 20px;
+    font-style: italic;
+}
+
+.footer-section .social-section .social-buttons i {
+    color: #95e1d3;
+}
+
+.footer-section .social-section .input-group {
+    width: 330px !important;
+}
+
+.footer-section .social-section .input-group input {
+    font-family: 'Roboto', sans-serif;
+    color: #acacac;
+    font-size: 12px;
+    font-style: italic;
+    border: none;
+}
+
+.footer-section .social-section .input-group button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #95e1d3;
+    border: none;
+}
+
+.footer-section h5 {
+    font-weight: 800;
+}
+
+.footer-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.footer-section .blog-info p {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.footer-section .instagram .img-wrapper {
+    margin: 0px 4px 4px 0px;
+}
+
+.footer-section .instagram img {
+    height: 85px;
+}
+
+.footer-section .instagram p {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.footer-section .footer {
+    border-top: 1px solid #e6e6e6;
+}
+
+.footer-section .footer h3 {
+    font-size: 12px;
+}
+
+.footer-section .footer h3 span {
+    color: #f38181;
+}
+
+/* FOOTER SECTION ENDS */
